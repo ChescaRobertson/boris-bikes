@@ -1,5 +1,10 @@
 class Bike
-  def working?()
+  def working?
     true
   end
+
+  def broken?
+    true
+  end
+
 end

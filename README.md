@@ -1,8 +1,10 @@
 # Boris Bikes
-description of project
+  A program to be used with a city-wide bike system. 
+  Program allows users to get bikes from docking stations, return bikes and report broken bikes.
+  Program also manages the flow of bikes to docking stations; allowing release of working bikes if they are present, allowing docking if space is available in the docking station.
 
 # Motivation
-Reason behind project
+  This project aims to increase my understanding of test-driven development, utilisng a TDD cycle throughout to build a working program.
 
 # Build Status
 
