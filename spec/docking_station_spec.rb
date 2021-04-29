@@ -12,11 +12,7 @@ describe DockingStation do
   it "allows you to view bikes" do
     expect(subject).to respond_to :bike
   end
-
-  it "check to see if a default capacity has been set" do
-    expect(subject.capacity).to eq DockingStation::DEFAULT_CAPACITY
-  end
-
+  
   it "Allows business to declare capacity instance variable" do
     expect(subject.capacity).to eq DockingStation::DEFAULT_CAPACITY
   end
