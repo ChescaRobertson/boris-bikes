@@ -1,4 +1,4 @@
-require_relative 'bike.rb'
+require_relative './bike.rb'
 
 class DockingStation 
   attr_accessor :capacity
@@ -9,11 +9,12 @@ class DockingStation
     @capacity = capacity
   end
 
-  def release_bike()
+  def release_bike(bike=@bikes)
     fail 'No bikes available' if empty?
+    fail 'This bike is broken' if broken?
     @bikes >> bikes
   end
-  
+
   def dock(bike)
     fail 'Docking station full' if full?
     @bikes << bike
